@@ -9,34 +9,8 @@
 
 </head>
 <body class="container">
-    <h1 class="mt-5">Mini chat</h1>
+    <h1 class="mt-5">Init APP</h1>
     <hr>
-
-    <form id="miFormulario">
-        <div class="row">
-            <div class="col-8">
-                <input type="text" id="txtMensaje" placeholder="Mensaje" class="form-control">
-            </div>
-            <div class="col-4">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
-        </div>
-    </form>
-
-
-    <div class="row">
-        <div class="col">
-            <ul id="misMensajes" class="mt-2">
-
-            </ul>
-        </div>
-    </div>
-
-
-
-
-
-
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.js" integrity="sha512-YeeA/Qxn5hYdkukScTCNNOhTrv1C2RubAGButJ1rmgQwZf/HdRaCGl+JAVkqsqaNRaYNHdheiuKKuPf9mDcqKg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -44,11 +18,8 @@
 
     <script>
         const socket = io('http://localhost:8080');
-        // referencias a elementos del doom
-        const formulario = document.querySelector('#miFormulario');
-        const mensajes = document.querySelector('#misMensajes');
-        const txtMensaje = document.querySelector('#txtMensaje');
-
+        
+        /*
         formulario.addEventListener('submit', (ev) => {
             ev.preventDefault();
             const nuevoMensaje = txtMensaje.value;
@@ -59,7 +30,7 @@
             console.log(data);
             mensajes.innerHTML += `<li>${data.texto}</li>`;
         })
-        
+        */
         
 
     </script>
